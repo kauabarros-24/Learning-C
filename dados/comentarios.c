@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    //Comentário
-    /*Comentário
-    */
+    printf("%d \t %d", 4, 6);
+    return 0;
 }
