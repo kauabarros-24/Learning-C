@@ -1,16 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    float a, b;
+    float nota1, nota2, media;
 
-    scanf("%f", &a);
-    scanf("%f", &b);
-    const float media = (a + b) / 2;
-    if (media >= 6.0) {
-        printf("aprovado");
-    }
+    scanf("%f %f", &nota1, &nota2);
+
+    media = ((nota1*2)+(nota2*3))/5;
+
+    if (media>=7) {
+        printf("Aprovado\n");
+    } 
+    else if (media<3) {
+        printf("Reprovado\n");
+    } 
     else {
-        printf("reprovado");
+        printf("Final\n");
     }
+
     return 0;
 }
