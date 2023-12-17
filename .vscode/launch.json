@@ -37,7 +37,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": ".",
-      "program": "build/Release/outRelease",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
