@@ -2,7 +2,7 @@
 
 int main()
 {
-    int marcador = 1, vetor[10], x, contador = 0, indices[10];
+    int marcador = 1, vetor[10], x, contador = 0, indices[10], j = 0;
     for (int i = 0; i < 10; i++)
     {
         scanf("%d", &vetor[i]);
@@ -13,7 +13,8 @@ int main()
         if (x == vetor[n]) {
             marcador = 0;
             contador++;
-            indices[n] = vetor[n];
+            indices[j] = n;
+            j++;
         }
     }
     if (marcador == 1)  {
@@ -21,7 +22,7 @@ int main()
     }
     else {
         printf("%d\n", contador);
-        for (int c = 0; c < 10; c++) {
+        for (int c = 0; c < contador; c++) {
             printf("%d ", indices[c]);
         }
     }
